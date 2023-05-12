@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "troposphere-awscommunity-applicationautoscaling-scheduledaction"
-version = "0.1.0"
+version = "0.0.1"
 description = "Troposphere resource for AwsCommunity::ApplicationAutoscaling::ScheduledAction"
 authors = ["John \"Preston\" Mille <john@ews-network.net>"]
 readme = "README.md"

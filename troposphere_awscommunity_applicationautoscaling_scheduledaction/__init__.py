@@ -1,6 +1,11 @@
 #  SPDX-License-Identifier: MIT
 #  Copyright 2023 John Mille <john@ews-network.net>
 
+__author__ = """John Mille"""
+__email__ = "john@ews-network.net"
+__version__ = "0.0.1"
+
+
 """Troposphere resource to cover AwsCommunity::ApplicationAutoscaling::ScheduledAction"""
 
 from troposphere import AWSObject, AWSProperty, PropsDictType
