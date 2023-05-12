@@ -14,6 +14,7 @@ def capacity_validator(value: int):
         raise ValueError(
             "MinCapacity/MaxCapacity must be a positive integer. Got", value
         )
+    return value
 
 
 def validate_schedule(value: str):
@@ -25,3 +26,4 @@ def validate_schedule(value: str):
         or value.startswith("rate(")
     ):
         raise ValueError(f"Schedule start with either at(|cron(|rate(. Got {value}")
+    return value

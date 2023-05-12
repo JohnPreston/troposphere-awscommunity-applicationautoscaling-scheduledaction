@@ -21,7 +21,9 @@ def test_valid_input():
     }
     tpl = Template()
     action = tpl.add_resource(ScheduledAction("MyAction", **props))
-    tpl.to_dict()
+    assert action.ScalableTargetAction.MinCapacity == 1
+    assert action.Schedule == "cron(5 2 ? * FRI)"
+    print(tpl.to_yaml())
 
 
 def test_invalid_target_value():

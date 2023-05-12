@@ -46,10 +46,11 @@ Resources:
       ResourceId: table/awscommunityscheduledactiontesttable
       ScalableDimension: dynamodb:table:ReadCapacityUnits
       ScalableTargetAction:
-        MaxCapacity: null
-        MinCapacity: null
-      Schedule: null
+        MaxCapacity: 4
+        MinCapacity: 1
+      Schedule: cron(5 2 ? * FRI)
       ScheduledActionName: cfn-testing-resource
       ServiceNamespace: dynamodb
       Timezone: Europe/London
+    Type: AwsCommunity::ApplicationAutoscaling::ScheduledAction
 ```
