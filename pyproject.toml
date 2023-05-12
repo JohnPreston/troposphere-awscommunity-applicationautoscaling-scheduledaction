@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "troposphere-awscommunity-applicationautoscaling-scheduledaction"
-version = "0.0.1"
+version = "0.1.1"
 description = "Troposphere resource for AwsCommunity::ApplicationAutoscaling::ScheduledAction"
 authors = ["John \"Preston\" Mille <john@ews-network.net>"]
 readme = "README.md"
@@ -56,7 +56,7 @@ known_first_party = "kelvin"
 github_url = "https://github.com/JohnPreston/troposphere-awscommunity-applicationautoscaling-scheduledaction.git"
 
 [tool.tbump.version]
-current = "0.0.1"
+current = "0.1.1"
 regex = '''
   (?P<major>\d+)
   \.
